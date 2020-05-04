@@ -10,7 +10,7 @@ makeVector <- function(x = matrix()) {
     inversed <<- NULL
   }
   get <- function() x
-  setInversed <- function (newInversed) inverse <<- newInversed
+  setInversed <- function (newInversed) inversed <<- newInversed
   getInversed <- function() inversed
   list(set = set, get = get, setInversed = setInversed, getInversed = getInversed)
 }
